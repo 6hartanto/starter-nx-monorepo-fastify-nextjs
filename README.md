@@ -1,4 +1,45 @@
-# StarterNxMonorepoFastifyNextjs
+# Starter Nx Monorepo Fastify and Nextjs
+
+## How this project was created
+  
+  ```bash
+  npx create-nx-workspace@latest <project-name>
+  ```
+  Then select the following options:
+  ```bash
+  Wich stack do you want to use?
+  ❯ Node
+  
+  What framework should be used?
+  ❯ Fastify
+  
+  Integrated monorepo, or standalone project?
+  ❯ Integrated Monorepo
+  
+  Application name: <app-name>
+  
+  Would you like to generate a Dockerfile? Yes
+  
+  Enable distributed caching to make your CI faster? Yes
+  ```
+  Then add Nextjs to the project:
+  ```bash
+  pnpm add @nx/next
+
+  pnpm nx g @nx/next:app <app-name>
+
+  Wich stylesheet format would you like to use?
+  ❯ SASS(.scss)
+
+  Wich E2E test runner would you like to use?
+  ❯ Cypress
+
+  Would you like to use the App Router (recommended)? true
+
+  Derived:
+   Name: <app-name>
+   Root: apps/<app-name>
+  ```
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
